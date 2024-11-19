@@ -56,7 +56,7 @@ public class FieldLogTrace implements LogTrace {
         if(traceIdHolder.isFirstLevel()) {
             traceIdHolder = null; // destroy
         } else {
-            traceIdHolder = traceIdHolder.createNextId();
+            traceIdHolder = traceIdHolder.createPreviousId();
         }
     }
 
