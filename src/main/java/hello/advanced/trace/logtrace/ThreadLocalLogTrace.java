@@ -27,7 +27,7 @@ public class ThreadLocalLogTrace implements LogTrace {
         if(traceId == null) {
             traceIdHolder.set(new TraceId());
         } else {
-            traceIdHolder.set(traceId.createNextId());;
+            traceIdHolder.set(traceId.createNextId());
         }
     }
 
